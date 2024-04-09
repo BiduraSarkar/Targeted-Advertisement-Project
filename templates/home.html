@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <style>
+            body{
+                background-image: linear-gradient(cyan,skyblue);
+                text-align-last: left;
+                font-size: medium;
+                font-family: 'Times New Roman';
+                font-weight: bold;
+            }
+            input{
+                border-color: black;
+                border-radius: 2px;
+                border-style: double;
+                width: auto;
+                height: auto;
+                float:right;
+            }
+            fieldset{
+                border-color: black;
+                border-radius: 2px;
+                border-style: double;
+                width: auto;
+                height: auto;
+            }
+            input{
+                float:right;
+            }
+            select{
+                float:right;
+            }
+            fieldset
+            {
+                width:30%
+            }
+        </style>
+    </head>
+    <body>
+        <center><h2>Targeted Advertisement - Ad Click Prediction</h2></center>
+        <fieldset>
+    <form action = "{{url_for("home")}}" method = "POST">
+
+        <label> Age </label> <input type =number id="age" name="age">
+        <br/><br/>
+        <label>Daily Time Spent</label>
+        <input type =number id="dts" name="dts">
+        <br/><br/>
+        <label>Area Income</label>
+        <input type =number id="ai" name="ai">
+        <br/><br/>
+        <label>Daily Internet Usage</label>
+        <input type =number id="dia" name="dia">
+        <br/><br/>
+
+        <label for="ad_name">Choose ad name:</label>
+        <select name="ad_name" id="ad_name" >
+          <option value=707>Reactive local challenge</option>
+          <option value=85>Centralized neutral neural-net</option>
+          <option value=883>Triple-buffered reciprocal time-frame</option>
+          <option value=347>Grass-roots coherent extranet</option>
+          
+        </select>
+        <br/><br/>
+        <label for="city">Choose city name:</label>
+        <select name="city" id="city" >
+        <option value=660>Port Jefferybury</option>
+        <option value=865>West Brandonton</option>
+        <option value=922>West Terrifurt</option>
+        <option value=927>West William</option>
+        </select>
+        <br/><br/>
+        <label for="time">Timestamp</label>
+        <select name="time" id="time">
+            <option value=203>07-03-2016 01:40</option>
+            <option value=505>16-03-2016 20:19	</option>
+            <option value=294>10-01-2016 02:31</option>
+            <option value=766>24-03-2016 09:31</option>
+        </select>
+            <br/><br/>
+            <label for="gender">Choose gender</label>
+            <select id="gender" name="gender">
+                <option value=0>Female</option>
+                <option value=1>Male</option>
+            </select>
+            <br/><br/>
+            <button type="Submit">Does Person Click on Ad ?</button>
+    </form>
+</fielset>
+</body>
+</html>
